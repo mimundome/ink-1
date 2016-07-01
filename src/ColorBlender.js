@@ -24,7 +24,7 @@ var ColorBlender =
 	//3. Layer color
 	//------------------------------
 
-	blend:function( layerColor, fxSolidFillColor, fxGradientFillColor, roundMyValues ) 
+	blend:function( layerColor, fxSolidFillColor, fxGradientFillColor, roundMyValues, colorFormat ) 
 	{
 		var myColors         = [];
 		var continueBlending = true;
@@ -191,6 +191,12 @@ var ColorBlender =
 			if ( blendOutput.colorItems.length > 0 ) 
 			{
 				blendOutput.css = Ps2CssUtils.rgbaObjToCSS( blendOutput.colorItems[0].rgba );
+
+				var myhex = ColorUtils.rgbToHex( blendOutput.colorItems[0].rgba.red,
+									             blendOutput.colorItems[0].rgba.green, 
+									             blendOutput.colorItems[0].rgba.blue );
+				myhex    += " (alpha: " + blendOutput.colorItems[0].rgba.alpha.toString() + ")";
+				blendOutput.hex = myhex;
 			}
 		}
 		return blendOutput;

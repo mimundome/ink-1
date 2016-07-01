@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<ExtensionManifest Version="4.0" ExtensionBundleId="com.chrometaphore.ink" ExtensionBundleVersion="1.5.1"
+<ExtensionManifest Version="4.0" ExtensionBundleId="com.chrometaphore.ink" ExtensionBundleVersion="1.5.6"
 		ExtensionBundleName="Ink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Author>
 		<![CDATA[chrometaphore.com]]>
@@ -19,7 +19,6 @@
 		</LocaleList>
 		<RequiredRuntimeList>
 			<RequiredRuntime Name="CSXS" Version="5.0" />
-
 		</RequiredRuntimeList>
 	</ExecutionEnvironment>
 	<DispatchInfoList>
@@ -37,7 +36,7 @@
 					<Menu>Ink</Menu>
 					<Geometry>
 						<Size>
-							<Height>320</Height>
+							<Height>360</Height>
 							<Width>220</Width>
 						</Size>
 					</Geometry>
